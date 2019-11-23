@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Survey</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Goblin+One|Lora|Macondo+Swash+Caps" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1>Questionnaire</h1>
+                            <h3 class="display-4">Answer the questions using a scale of 1 (strongly disagree) to 5
+                                (strongly agree)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-2" id="spacer"></div>
+                <div class="col-lg-8">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>About You</h2>
+                            <hr>
+                            <form method="POST" role="form">
+
+                                <div class="form-group">
+                                    <label for="name">Name (required)</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="photo">Link to Photo (required)</label>
+                                    <input type="text" class="form-control" id="photo" required>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card-body">
+                            <h2>Questions</h2>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-1">
+                                    <h4>#1. Your mind is always buzzing with unexplored ideas and plans.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q1" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q1" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q1" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q1" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q1" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-2">
+                                    <h4>#2. You like to approach people with silly questions at Target.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q2" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q2" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q2" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q2" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q2" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-3">
+                                    <h4>#3. Quite often you will do something just out of pure curiosity.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q3" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q3" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q3" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q3" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q3" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-4">
+                                    <h4>#4. You prefer to read a Bible over a novel.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q4" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q4" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q4" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q4" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q4" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-5">
+                                    <h4>#5. PG-13 is your movie of choice.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q5" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q5" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q5" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q5" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q5" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-6">
+                                    <h4>#6. You like spontaneous adventure.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q6" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q6" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q6" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q6" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q6" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-7">
+                                    <h4>#7. You like shopping.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q7" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q7" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q7" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q7" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q7" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-8">
+                                    <h4>#8. You believe community activism and community service are two things everyone
+                                        should engage in.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q8" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q8" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q8" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q8" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q8" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-9">
+                                    <h4>#9. You take an active interest in things that your friends are interested
+                                        in.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q9" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q9" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q9" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q9" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q9" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+
+                                <label for="question-10">
+                                    <h4>#10. You dream of a cozy night by the fireplace over a night at the club.</h4>
+                                </label>
+                                <div class="card-body" id="options">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q10" id="inlineRadio1"
+                                                value="1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q10" id="inlineRadio2"
+                                                value="2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q10" id="inlineRadio3"
+                                                value="3"> 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q10" id="inlineRadio4"
+                                                value="4"> 4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="q10" id="inlineRadio5"
+                                                value="5"> 5
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <br>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-secondary btn-md submit" id="add-btn"
+                                    data-toggle="modal" data-target="#results-modal">Find Friend</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="results-modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title" id="bestFriend"><strong>Best Match</strong></h2>
+                        </div>
+                        <div class="modal-body">
+                            <h2 id="friend-name"></h2>
+                            <img id="friend-photo" src="" alt="text">
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </body>
+
+</html>
+
+
+<!-- Front-end JavaScript-->
+
+<script type="text/javascript">
+    var allAnswers = [];
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+        function validateForm() {
+            var isValid = true;
+            $(".form-control").each(function () {
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+            console.log("WTH");
+            $(".form-check-input").each(function () {
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+            return isValid;
+        }
+
+        if (validateForm() == true) {
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                answers: function () {
+                    for (i = 1; i < 11; i++) {
+                        var answer = $('input[name="q' + i + '"]:checked').val();
+                        allAnswers.push(parseInt(answer));
+                    }
+                    return allAnswers;
+                }
+            }
+            console.log(newFriend);
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", newFriend, function (data) {
+                $("#friend-name").text(data.name);
+                $("#friend-photo").attr("src", data.photo);
+                $("#results-modal").modal("show");
+            });
+            // clears the form on submit
+            $("#name").val("");
+            $("#photo").val("");
+            $('input[type="radio"]').attr('checked', false);
+        } else {
+            alert("Please fill out ALL fields before submitting survey!")
+        }
+    });
+</script>
