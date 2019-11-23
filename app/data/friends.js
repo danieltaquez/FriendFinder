@@ -21,5 +21,4 @@ var friends = [
         answers: [5, 1, 4, 1, 5, 1, 1, 4, 2, 5]
     },
 ];
-
 module.exports = friends;

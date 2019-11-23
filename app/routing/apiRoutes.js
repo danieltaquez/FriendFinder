@@ -32,7 +32,6 @@ function NewFriend(name, photo, answers) {
 }
 NewFriend();
 
-
 function convertAnswers(currentFriend) {
 
     var current = currentFriend;
