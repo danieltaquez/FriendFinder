@@ -11,7 +11,7 @@ module.exports = function (app) {
     });
     app.post("/api/friends", function (req, res) {
         console.log("this will do stuff");
-        var friendInput = req.body; // stores input from user survey
+        var friendInput = req.body;
         res.json(true);
         console.log("\nName: " + friendInput.name + "\nPhoto: " +
             friendInput.photo + "\nScores: " + friendInput.answers);
@@ -19,9 +19,7 @@ module.exports = function (app) {
         friendInput.answers = friendInput.answers.split(",");
         friends.push(friendInput);
         convertAnswers(friendInput);
-        // console.log(friendInput.answers);
         compareFriends(friends, friendInput);
-        // console.log(friendInput);
     });
 }
 
